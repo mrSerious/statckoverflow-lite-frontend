@@ -1,0 +1,28 @@
+{
+  "name": "statckoverflow-lite-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for the Stack-overflow lite api app built with React/Redux",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-loader": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrSerious/statckoverflow-lite-frontend.git"
+  },
+  "keywords": [],
+  "author": "Tersoo Atsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrSerious/statckoverflow-lite-frontend/issues"
+  },
+  "homepage": "https://github.com/mrSerious/statckoverflow-lite-frontend#readme"
+}
