@@ -28,9 +28,16 @@ exports[`App snapshot test 1`] = `
       }
     }
   >
-    <h1>
-      Hello
-    </h1>
+    <BrowserRouter>
+      <Switch>
+        <Route
+          component={[Function]}
+        />
+      </Switch>
+      <h1>
+        Hello
+      </h1>
+    </BrowserRouter>
   </PersistGate>
 </Provider>
 `;
