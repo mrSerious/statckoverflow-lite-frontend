@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-
+import React, { Fragment, Component } from 'react';
+import { PersistGate } from 'redux-persist/integration/react';
+import { Provider } from 'react-redux';
+import { persistor, store } from './store/store';
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +11,13 @@ class App extends Component {
 
   render() {
     return (
-      <h1>Hello</h1>
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <Fragment>
+            <h1>Hello</h1>
+          </Fragment>
+        </PersistGate>
+      </Provider>
     );
   }
 }
