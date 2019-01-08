@@ -29,14 +29,25 @@ exports[`App snapshot test 1`] = `
     }
   >
     <BrowserRouter>
+      <Connect(withRouter(Header)) />
       <Switch>
+        <Route
+          component={[Function]}
+          exact={true}
+          key="/"
+          path="/"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          key="/results"
+          path="/results"
+        />
         <Route
           component={[Function]}
         />
       </Switch>
-      <h1>
-        Hello
-      </h1>
+      <Footer />
     </BrowserRouter>
   </PersistGate>
 </Provider>

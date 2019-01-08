@@ -1,3 +1,7 @@
 export default {
-  stuff: []
+  search: {
+    loading: false,
+    results: [],
+    success: false,
+  }
 };

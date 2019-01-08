@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import { persistor, store } from './store/store';
 import NotFound from './components/404/NotFound';
 import routes from './routes';
+import HeaderComponent from './components/common/header/Header';
+import Footer from './components/common/footer/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +20,7 @@ class App extends Component {
         <PersistGate persistor={persistor}>
           <Router>
             <Fragment>
+              <HeaderComponent />
               <Switch>
                 {
                   routes.map(route => (
@@ -31,6 +34,7 @@ class App extends Component {
                 }
                 <Route component={NotFound} />
               </Switch>
+              <Footer />
             </Fragment>
           </Router>
         </PersistGate>
