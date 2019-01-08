@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header tests should render the results page without crashing 1`] = `
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
+`;

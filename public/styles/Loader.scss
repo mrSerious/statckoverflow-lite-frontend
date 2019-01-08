@@ -1,0 +1,18 @@
+.loader-overlay {
+  background-color: $loader-overlay;
+  color: $very-dark-grayish-blue;
+  font-size: 2em;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999999999999;
+
+  .fas {
+    -webkit-animation: fa-spin 3s infinite linear;
+    animation: fa-spin 3s infinite linear;
+    position: relative;
+    top: 45%;
+  }
+}
