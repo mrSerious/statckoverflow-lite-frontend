@@ -47,7 +47,7 @@ export class Header extends Component {
               <li>
                 <NavLink to="/newQuestion">Ask Question</NavLink>
               </li>
-              {loggedIn ? (<li><NavLink id="profile" to="/profile"><img className="avatar" src={avatar} alt="avatar" /></NavLink></li>) : (<li><NavLink id="signin" to="/signin">Sign In</NavLink></li>) }
+              {loggedIn ? (<li><NavLink id="profile" to="/profile"><img className="avatar" src={avatar} alt="avatar" /></NavLink></li>) : (<li><NavLink id="login" to="/login">Sign In</NavLink></li>) }
               {loggedIn ? (<li><NavLink id="logout" to="/logout">Log out</NavLink></li>) : (<li><NavLink id="signup" to="/signup">Sign up</NavLink></li>) }
             </ul>
           </nav>

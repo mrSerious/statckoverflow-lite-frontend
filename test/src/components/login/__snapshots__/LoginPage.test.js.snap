@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`results page tests should render the results page without crashing 1`] = `
+<div
+  className="site-content"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="signin-area"
+    >
+      <div
+        className="signin-form"
+      >
+        <div
+          className="heading-text center-text"
+        >
+          <h2
+            className=""
+          >
+            Sign In To Your Account
+          </h2>
+          <p
+            className="no-margin"
+          >
+            Or
+             
+            <b>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/signup"
+              >
+                register
+              </NavLink>
+            </b>
+             
+            if you do not have an account.
+          </p>
+        </div>
+        <form
+          id="login"
+          onSubmit={[Function]}
+        >
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="male"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              name="email"
+              onChange={[Function]}
+              required={true}
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="male"
+            >
+              Password
+            </label>
+            <input
+              id="password"
+              name="password"
+              onChange={[Function]}
+              required={true}
+              type="password"
+              value=""
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <button
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

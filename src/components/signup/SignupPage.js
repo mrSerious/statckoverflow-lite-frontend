@@ -20,7 +20,7 @@ export class SignupPage extends Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-  handleFormSubmit = async (e) => {
+  handleFormSubmit = (e) => {
     e.preventDefault();
     const { signup, history } = this.props;
 
