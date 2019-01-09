@@ -1,7 +1,129 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header tests should render the results page without crashing 1`] = `
-<ContextConsumer>
-  <Component />
-</ContextConsumer>
+exports[`results page tests should render the results page without crashing 1`] = `
+<div
+  className="site-content container"
+>
+  <h1
+    className="header-title"
+  >
+    Search Results
+  </h1>
+  <ul
+    className="results-wrapper"
+  >
+    <div
+      className="question-summary"
+      key="post0"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="one-fourth column"
+        >
+          <div
+            className="question-meta"
+          >
+            <div
+              className="votes"
+            >
+              <div
+                className="mini-counts"
+              >
+                <span>
+                  0
+                </span>
+              </div>
+              <div>
+                <i
+                  aria-hidden="true"
+                  className="fas fa-heart"
+                />
+              </div>
+            </div>
+            <div
+              className="status"
+            >
+              <div
+                className="mini-counts"
+              >
+                <span>
+                  1
+                </span>
+              </div>
+              <div>
+                <i
+                  aria-hidden="true"
+                  className="fas fa-pencil-alt"
+                />
+              </div>
+            </div>
+            <div
+              className="views"
+            >
+              <div
+                className="mini-counts"
+              >
+                <span>
+                  17
+                </span>
+              </div>
+              <div>
+                <i
+                  aria-hidden="true"
+                  className="fas fa-eye"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="three-fourths column"
+        >
+          <div
+            className="user-question"
+          >
+            <span>
+              asked by 
+              <a
+                href="profile.html"
+              >
+                 
+              </a>
+              1 year ago
+            </span>
+          </div>
+          <h2
+            className="question-title"
+          >
+            <a
+              href="question_details.html"
+            />
+          </h2>
+          <div
+            className="tags"
+          >
+            <a
+              className="post-tag"
+              href=""
+              rel="tag"
+              title=""
+            >
+              java
+            </a>
+            <a
+              className="post-tag"
+              href=""
+              rel="tag"
+              title=""
+            >
+              maven
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>
 `;

@@ -1,8 +1,12 @@
+import { reducer as toastrReducer } from 'react-redux-toastr';
 import { combineReducers } from 'redux';
-import search from './search';
+import searchReducer from './searchReducer';
+import signupReducer from './signupReducer';
 
 const rootReducer = combineReducers({
-  search
+  toastr: toastrReducer,
+  search: searchReducer,
+  signup: signupReducer
 });
 
 export default rootReducer;

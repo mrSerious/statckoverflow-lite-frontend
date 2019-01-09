@@ -5,9 +5,10 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const cssnano = require('cssnano');
 const path = require('path');
+require('@babel/polyfill');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['@babel/polyfill', './src/index.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',

@@ -1,5 +1,6 @@
 import Home from './components/home/HomePage';
 import ResultsPage from './components/results/ResultsPage';
+import SignupPage from './components/signup/SignupPage';
 
 const routes = [
   {
@@ -10,6 +11,11 @@ const routes = [
   {
     path: '/results',
     component: ResultsPage,
+    exact: true
+  },
+  {
+    path: '/signup',
+    component: SignupPage,
     exact: true
   }
 ];

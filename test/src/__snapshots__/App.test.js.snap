@@ -45,9 +45,25 @@ exports[`App snapshot test 1`] = `
         />
         <Route
           component={[Function]}
+          exact={true}
+          key="/signup"
+          path="/signup"
+        />
+        <Route
+          component={[Function]}
         />
       </Switch>
       <Footer />
+      <Connect(ReduxToastr)
+        closeOnToastrClick={true}
+        newestOnTop={true}
+        position="top-right"
+        preventDuplicates={true}
+        progressBar={true}
+        timeOut={6000}
+        transitionIn="fadeIn"
+        transitionOut="fadeOut"
+      />
     </BrowserRouter>
   </PersistGate>
 </Provider>
