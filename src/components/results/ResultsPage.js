@@ -11,7 +11,7 @@ export class ResultPage extends Component {
   render() {
     const { results } = this.props;
     const renderResults = results.map((question, index) => (
-      <div key={`post${String(index)}`} className="question-summary container">
+      <div key={`post${String(index)}`} className="question-summary">
         <div className="row">
           <div className="one-fourth column">
             <div className="question-meta">
@@ -59,7 +59,7 @@ export class ResultPage extends Component {
     ));
 
     return (
-      <div className="site-content">
+      <div className="site-content container">
         <h1 className="header-title">Search Results</h1>
         <ul className="results-wrapper">
           {

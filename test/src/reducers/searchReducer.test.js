@@ -1,5 +1,5 @@
 
-import searchReducer from '../../../src/reducers/search';
+import searchReducer from '../../../src/reducers/searchReducer';
 import { SEARCH_BEGIN, SEARCH_ERROR, SEARCH_SUCCESS } from '../../../src/actions/actionTypes';
 
 const state = {

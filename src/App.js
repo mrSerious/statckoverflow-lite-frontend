@@ -2,6 +2,7 @@ import React, { Fragment, Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
+import ReduxToastr from 'react-redux-toastr';
 import { persistor, store } from './store/store';
 import NotFound from './components/404/NotFound';
 import routes from './routes';
@@ -35,6 +36,16 @@ class App extends Component {
                 <Route component={NotFound} />
               </Switch>
               <Footer />
+              <ReduxToastr
+                timeOut={6000}
+                newestOnTop
+                preventDuplicates
+                position="top-right"
+                transitionIn="fadeIn"
+                transitionOut="fadeOut"
+                progressBar
+                closeOnToastrClick
+              />
             </Fragment>
           </Router>
         </PersistGate>

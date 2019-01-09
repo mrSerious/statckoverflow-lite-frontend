@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700,900|Orbitron');
+@import 'react-redux-toastr/src/styles/index';
 @import './variables';
 @import './mixins';
 @import './Header';
@@ -58,7 +59,7 @@ body {
 .site-content {
   flex: 1 0 auto;
   margin-bottom: 2rem;
-  margin-top: 100px;
+  // margin-top: 100px;
 }
 
 // Responsive Design Grid
@@ -121,9 +122,11 @@ textarea {
   width: 100%;
 }
 
-input:focus,
-textarea:focus {
-  // border: 1px solid $accent-color;
+.signup-area {
+  input:focus,
+  textarea:focus {
+    border: 1px solid $accent-color;
+  }
 }
 
 button,

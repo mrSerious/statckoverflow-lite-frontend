@@ -1,9 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SearchForm from '../../../../../src/components/common/header/SearchForm';
+import { SearchForm } from '../../../../../src/components/common/header/SearchForm';
 
-describe('Header tests', () => {
-  const wrapper = shallow(<SearchForm />);
+const props = {
+  search: jest.fn(),
+  history: { push: jest.fn() },
+};
+
+describe('search form tests', () => {
+  const wrapper = shallow(<SearchForm {...props} />);
 
   it('should render the search form without crashing', () => {
     expect(wrapper).toMatchSnapshot();

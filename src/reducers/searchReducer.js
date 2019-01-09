@@ -3,7 +3,7 @@ import initialState from './initialState';
 
 const { search } = initialState;
 
-const articlesReducer = (state = search, action) => {
+const searchReducer = (state = search, action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -35,4 +35,4 @@ const articlesReducer = (state = search, action) => {
   }
 };
 
-export default articlesReducer;
+export default searchReducer;
