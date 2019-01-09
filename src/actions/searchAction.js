@@ -18,10 +18,10 @@ const searchError = () => ({
 });
 
 const searchRequest = searchTerm => (dispatch) => {
-  const searchUrl = `https://stack-overflow-lite-app.herokuapp.com/api/v1/questions?q=${searchTerm}`;
+  const url = `https://stack-overflow-lite-app.herokuapp.com/api/v1/questions?q=${searchTerm}`;
   dispatch(searchBegin());
 
-  return Axios.get(searchUrl)
+  return Axios.get(url)
     .then(json => dispatch(searchSuccess(json.data.data.questions)))
     .catch(() => dispatch(searchError()));
 };

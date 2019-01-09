@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`results page tests should render the results page without crashing 1`] = `
+exports[`login page tests should render the login page without crashing 1`] = `
 <div
   className="site-content"
 >
