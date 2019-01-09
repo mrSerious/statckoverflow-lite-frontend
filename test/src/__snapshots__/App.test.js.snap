@@ -57,6 +57,12 @@ exports[`App snapshot test 1`] = `
         />
         <Route
           component={[Function]}
+          exact={true}
+          key="/post-question"
+          path="/post-question"
+        />
+        <Route
+          component={[Function]}
         />
       </Switch>
       <Footer />

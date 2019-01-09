@@ -31,13 +31,22 @@ describe('login reducer test', () => {
     state.id = 'something';
     state.token = 'token';
     state.username = 'username';
+    state.loggedIn = true;
+    state.user = {
+      userid: 'something',
+      token: 'token',
+      username: 'username',
+    };
 
     expect(loginReducer(state, {
       type: LOGIN_SUCCESS,
       payload: {
-        userid: 'something',
-        token: 'token',
-        username: 'username',
+        data: {
+          userid: 'something',
+          token: 'token',
+          username: 'username',
+          loggedInUser: state.user,
+        }
       },
     })).toEqual(state);
   });
@@ -48,6 +57,8 @@ describe('login reducer test', () => {
     state.id = null;
     state.token = null;
     state.error = 'error';
+    state.user = null;
+    state.loggedIn = false;
 
     expect(loginReducer(state, {
       type: LOGIN_ERROR,

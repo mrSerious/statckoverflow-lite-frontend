@@ -57,7 +57,7 @@ export class HomePage extends Component {
             <div className="user-question">
               <span>
                 asked by&nbsp;
-                <NavLink href="/profile">
+                <NavLink to="/profile">
                   {question.username}
                   &nbsp;
                 </NavLink>

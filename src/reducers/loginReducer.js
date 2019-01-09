@@ -8,6 +8,10 @@ const loginReducer = (state = initialState.login, action) => {
         ...state,
         error: null,
         loading: true,
+        loggedIn: false,
+        user: null,
+        success: false,
+        token: null
       };
 
     case LOGIN_SUCCESS:
@@ -16,16 +20,19 @@ const loginReducer = (state = initialState.login, action) => {
         error: null,
         loading: false,
         success: true,
-        token: action.payload.token,
-        id: action.payload.userid,
-        username: action.payload.username,
+        token: action.payload.data.token,
+        loggedIn: true,
+        user: action.payload.data.loggedInUser
       };
 
     case LOGIN_ERROR:
       return {
         ...state,
         loading: false,
+        loggedIn: false,
         error: action.payload,
+        user: null,
+        success: false,
       };
 
     case 'LOGOUT':
