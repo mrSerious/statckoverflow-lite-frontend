@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`results page tests should render the results page without crashing 1`] = `
+<div
+  className="site-content"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="signup-area"
+    >
+      <div
+        className="signup-form"
+      >
+        <div
+          className="heading-text center-text"
+        >
+          <h2
+            className=""
+          >
+            Create your account. It's free and only takes a minute.
+          </h2>
+          <p
+            className="no-margin"
+          >
+            Or
+             
+            <b>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/login"
+              >
+                login
+              </NavLink>
+            </b>
+             
+            if you already have an account.
+          </p>
+        </div>
+        <form
+          action=""
+          id="signup"
+          method="post"
+          onSubmit={[Function]}
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="form-group"
+            >
+              <div
+                className="half column"
+              >
+                <label
+                  htmlFor="male"
+                >
+                  First Name
+                </label>
+                <input
+                  id="firstname"
+                  name="firstname"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                className="half column"
+              >
+                <label
+                  htmlFor="male"
+                >
+                  Last Name
+                </label>
+                <input
+                  id="lastname"
+                  name="lastname"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                className="half column"
+              >
+                <label
+                  htmlFor="male"
+                >
+                  Username
+                </label>
+                <input
+                  id="username"
+                  name="username"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                className="half column"
+              >
+                <label
+                  htmlFor="male"
+                >
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  onChange={[Function]}
+                  required={true}
+                  type="email"
+                  value=""
+                />
+              </div>
+              <div
+                className="half column"
+              >
+                <label
+                  htmlFor="male"
+                >
+                  Password
+                </label>
+                <input
+                  id="password"
+                  name="password"
+                  onChange={[Function]}
+                  required={true}
+                  type="password"
+                  value=""
+                />
+              </div>
+              <div
+                className="half column"
+              >
+                <label
+                  htmlFor="male"
+                >
+                  Confirm Password
+                </label>
+                <input
+                  id="confirm_password"
+                  name="confirm_password"
+                  onChange={[Function]}
+                  required={true}
+                  type="password"
+                  value=""
+                />
+              </div>
+              <div
+                className="one column"
+              >
+                <button
+                  id="signup_button"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

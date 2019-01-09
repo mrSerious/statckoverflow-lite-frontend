@@ -9,5 +9,15 @@ export default {
     loading: false,
     success: false,
     user: null,
+  },
+  login: {
+    error: null,
+    loading: false,
+    success: false,
+    user: null,
+    loggedIn: false,
+    id: null,
+    token: null,
+    username: null,
   }
 };
