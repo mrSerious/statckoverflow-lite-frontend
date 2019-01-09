@@ -19,5 +19,10 @@ export default {
     id: null,
     token: null,
     username: null,
+  },
+  questions: {
+    loading: false,
+    questions: [],
+    success: false,
   }
 };

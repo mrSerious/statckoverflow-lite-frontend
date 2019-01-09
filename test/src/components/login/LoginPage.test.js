@@ -3,12 +3,13 @@ import { shallow } from 'enzyme';
 import { LoginPage } from '../../../../src/components/login/LoginPage';
 
 const props = {
-  login: jest.fn()
+  login: jest.fn(),
+  history: { push: jest.fn() },
 }
-describe('results page tests', () => {
+describe('login page tests', () => {
   const wrapper = shallow(<LoginPage {...props} />);
 
-  it('should render the results page without crashing', () => {
+  it('should render the login page without crashing', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -2,10 +2,31 @@
 
 exports[`App snapshot test 1`] = `
 <div
-  className="site-content"
+  className="site-content container"
 >
-  <h1>
-    This is the home page
-  </h1>
+  <div
+    className="questions"
+  >
+    <div
+      className="q-headline"
+    >
+      <h1>
+        Latest Questions
+      </h1>
+      <a
+        className="sort-button"
+        href=""
+      >
+        Sort By Popular
+      </a>
+    </div>
+    <div
+      className="list-wrapper"
+    >
+      <div
+        id="question-mini-list"
+      />
+    </div>
+  </div>
 </div>
 `;
