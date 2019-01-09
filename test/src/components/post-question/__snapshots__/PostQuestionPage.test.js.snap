@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`login page tests should render the login page without crashing 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="new-question-container"
+  >
+    <div
+      className="new-question-heading"
+    >
+      <h1
+        className="new-question-header"
+      >
+        Ask a question
+      </h1>
+      <div
+        className="new-question-sub"
+      >
+        Running into trouble? Our developer community is here to help!
+      </div>
+    </div>
+  </div>
+  <div
+    className="new-question-form"
+  >
+    <form
+      id="new_question"
+      onSubmit={[Function]}
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="form-group"
+        >
+          <div
+            className="one column"
+          >
+            <label
+              htmlFor="title"
+            >
+              What's your question?*
+            </label>
+            <input
+              id="title"
+              name="title"
+              onChange={[Function]}
+              placeholder="Tell us what you need help figuring out"
+              required={true}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="form-group"
+        >
+          <div
+            className="one column"
+          >
+            <label
+              htmlFor="tags"
+            >
+              Tags*
+            </label>
+            <input
+              name="tags"
+              onChange={[Function]}
+              placeholder="Add a couple tags to help others find your question"
+              type="text"
+            />
+          </div>
+          <div
+            className="one column"
+          >
+            <label
+              htmlFor="male"
+            >
+              What else do we need to know?*
+            </label>
+            <textarea
+              cols="30"
+              id="body"
+              name="body"
+              onChange={[Function]}
+              placeholder="Include details like logs, error messages, OS used, or steps you've already taken."
+              rows="5"
+            />
+          </div>
+          <div
+            className="one column"
+          >
+            <button
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

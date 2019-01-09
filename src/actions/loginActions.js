@@ -21,11 +21,11 @@ const loginRequest = user => async (dispatch) => {
   return Axios.post(url, user)
     .then((response) => {
       dispatch(loginSuccess(response.data));
-      toastr.success('You are no logged in.');
+      toastr.success('You are now logged in.');
     })
     .catch((error) => {
       dispatch(loginError(error.response.data.message));
-      toastr.warning((error.response.data.message));
+      toastr.error((error.response.data.message));
     });
 };
 

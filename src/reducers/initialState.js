@@ -24,5 +24,11 @@ export default {
     loading: false,
     questions: [],
     success: false,
+  },
+  newQuestion: {
+    error: null,
+    loading: false,
+    success: false,
+    id: null,
   }
 };
