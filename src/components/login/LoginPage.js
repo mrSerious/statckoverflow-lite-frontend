@@ -19,11 +19,11 @@ export class LoginPage extends Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-    const {
-      login, history, error, loading
-    } = this.props;
+    const { login, history } = this.props;
     await login({ ...this.state });
-    setTimeout(() => history.push('/'), 6000);
+    setTimeout(() => {
+      history.push('/');
+    }, 6000);
   };
 
   render() {
@@ -74,7 +74,6 @@ export class LoginPage extends Component {
 LoginPage.propTypes = {
   login: propTypes.func.isRequired,
   history: propTypes.object.isRequired,
-  error: propTypes.string.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({
@@ -83,7 +82,6 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => ({
   error: state.login.error,
-  loading: state.login.loading
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);

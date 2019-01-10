@@ -25,6 +25,6 @@ export const signupRequest = user => async (dispatch) => {
     })
     .catch((error) => {
       dispatch(signupError(error.response.data.message));
-      toastr.success('Something went wrong, contact your admin for assitance.');
+      toastr.error('Something went wrong, contact your admin for assitance.');
     });
 };

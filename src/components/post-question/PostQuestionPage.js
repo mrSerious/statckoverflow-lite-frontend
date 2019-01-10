@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { toastr } from 'react-redux-toastr';
 import propTypes from 'prop-types';
 import { requestPostQuestion } from '../../actions/postQuestionActions';
 
@@ -21,16 +20,13 @@ export class PostQuestionPage extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     const {
-      error, history, postQuestion, id
+      postQuestion
     } = this.props;
 
     await postQuestion({ ...this.state });
-
-    if (error) {
-      toastr.error((error));
-    } else {
-      setTimeout(() => history.push(`question/${id}`), 6000);
-    }
+    setTimeout(() => {
+      window.location.href = '/';
+    }, 6000);
   };
 
   render() {
@@ -108,10 +104,7 @@ const mapStateToProps = state => ({
 
 
 PostQuestionPage.propTypes = {
-  error: propTypes.string.isRequired,
   postQuestion: propTypes.func.isRequired,
-  history: propTypes.object.isRequired,
-  id: propTypes.number.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostQuestionPage);

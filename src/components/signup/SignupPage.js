@@ -22,10 +22,12 @@ export class SignupPage extends Component {
 
   handleFormSubmit = (e) => {
     e.preventDefault();
-    const { signup, history } = this.props;
+    const { history, signup } = this.props;
 
     signup({ ...this.state });
-    setTimeout(() => history.push('/login'), 6000);
+    setTimeout(() => {
+      history.push('/login');
+    }, 6000);
   };
 
   render() {
@@ -93,6 +95,7 @@ export class SignupPage extends Component {
 SignupPage.propTypes = {
   history: propTypes.instanceOf(Object).isRequired,
   signup: propTypes.func.isRequired,
+  history: propTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
