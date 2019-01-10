@@ -68,8 +68,8 @@ export class HomePage extends Component {
               <a href="question_details.html">{question.title}</a>
             </h2>
             <div className="tags">
-              <NavLink to="" className="post-tag" title="" rel="tag">java</NavLink>
-              <NavLink to="" className="post-tag" title="" rel="tag">maven</NavLink>
+              <a href="" className="post-tag" title="" rel="tag">java</a>
+              <a href="" className="post-tag" title="" rel="tag">maven</a>
             </div>
           </div>
         </div>

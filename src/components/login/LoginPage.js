@@ -22,12 +22,8 @@ export class LoginPage extends Component {
     const {
       login, history, error, loading
     } = this.props;
-
     await login({ ...this.state });
-
-    if (!error) {
-      setTimeout(() => history.push('/'), 6000);
-    }
+    setTimeout(() => history.push('/'), 6000);
   };
 
   render() {

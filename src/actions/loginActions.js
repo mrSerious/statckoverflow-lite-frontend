@@ -25,7 +25,7 @@ const loginRequest = user => async (dispatch) => {
     })
     .catch((error) => {
       dispatch(loginError(error.response.data.message));
-      toastr.error((error.response.data.message));
+      toastr.error(('There was an error, please try again.'));
     });
 };
 
