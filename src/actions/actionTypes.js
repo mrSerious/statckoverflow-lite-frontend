@@ -9,6 +9,7 @@ export const SIGNUP_ERROR = 'SIGNUP_ERROR';
 export const LOGIN_BEGIN = 'LOGIN_BEGIN';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_ERROR = 'LOGIN_ERROR';
+export const LOGOUT = 'LOGOUT';
 
 export const ALL_QUESTIONS_BEGIN = 'ALL_QUESTIONS_BEGIN';
 export const ALL_QUESTIONS_SUCCESS = 'ALL_QUESTIONS_SUCCESS';

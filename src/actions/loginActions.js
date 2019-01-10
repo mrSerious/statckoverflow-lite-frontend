@@ -1,6 +1,9 @@
 import Axios from 'axios';
 import { toastr } from 'react-redux-toastr';
-import { LOGIN_BEGIN, LOGIN_SUCCESS, LOGIN_ERROR } from './actionTypes';
+import {
+  LOGIN_BEGIN, LOGIN_SUCCESS, LOGIN_ERROR, LOGOUT
+} from './actionTypes';
+import initialState from '../reducers/initialState';
 
 const loginBegin = () => ({ type: LOGIN_BEGIN });
 
@@ -29,7 +32,7 @@ const loginRequest = user => async (dispatch) => {
     });
 };
 
-const logoutRequest = () => ({ type: 'LOGOUT' });
+const logoutRequest = () => ({ type: LOGOUT, payload: initialState.login });
 
 export {
   loginBegin,

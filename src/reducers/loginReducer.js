@@ -1,4 +1,6 @@
-import { LOGIN_BEGIN, LOGIN_SUCCESS, LOGIN_ERROR } from '../actions/actionTypes';
+import {
+  LOGIN_BEGIN, LOGIN_SUCCESS, LOGIN_ERROR, LOGOUT
+} from '../actions/actionTypes';
 import initialState from './initialState';
 
 const loginReducer = (state = initialState.login, action) => {
@@ -35,10 +37,10 @@ const loginReducer = (state = initialState.login, action) => {
         success: false,
       };
 
-    case 'LOGOUT':
+    case LOGOUT:
       return {
         ...state,
-        ...initialState,
+        ...action.payload
       };
 
     default:

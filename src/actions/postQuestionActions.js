@@ -25,9 +25,9 @@ export const requestPostQuestion = question => async (dispatch) => {
       if (response.error) {
         toastr.success('Something went wrong. Please try again.');
       } else {
-        dispatch(postQuestionSuccess(response.data.question.questionid));
+        dispatch(postQuestionSuccess(response));
         toastr.success('Your question was added successfully');
       }
     })
-    .catch(error => dispatch(postQuestionError(error.response.data.message)));
+    .catch(error => dispatch(postQuestionError(error)));
 };
