@@ -23,5 +23,8 @@ export const signupRequest = user => async (dispatch) => {
       dispatch(signupSuccess(response.data.user));
       toastr.success('Signup successful! Login to continue.');
     })
-    .catch(error => dispatch(signupError(error.response.data.message)));
+    .catch((error) => {
+      dispatch(signupError(error.response.data.message));
+      toastr.success('Something went wrong, contact your admin for assitance.');
+    });
 };
